@@ -159,3 +159,4 @@ string AFN::indiceFinales(int i){
 string	AFN::obtenerInicial(){
 	return S0;
 }
+

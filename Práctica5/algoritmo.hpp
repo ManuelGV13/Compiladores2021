@@ -2,14 +2,14 @@
 #include <iostream> 
 #include <vector> 
 #include <string>
-#include "EstadoCandidato.hpp"
-#include "Transicion.hpp"
-#include "Algoritmo.hpp"
+#include "estado.hpp"
+#include "transicion.hpp"
+#include "algoritmo.hpp"
 #include "AFN.hpp"
 
 using namespace std;
 
-class Algoritmo{
+class algoritmo{
 	private:
 		vector<EstadoCandidato> candidatos;
 		bool destadosRestantes;

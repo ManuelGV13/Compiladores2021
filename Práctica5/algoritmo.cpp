@@ -6,9 +6,9 @@
 #include <vector> 
 #include <sstream>
 #include <cstring>
-#include "EstadoCandidato.hpp"
-#include "Transicion.hpp"
-#include "Algoritmo.hpp"
+#include "estado.hpp"
+#include "transicion.hpp"
+#include "algoritmo.hpp"
 #include "AFN.hpp"
 
 using namespace std;

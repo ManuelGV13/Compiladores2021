@@ -4,7 +4,7 @@
 #include <vector> 
 #include <sstream>
 #include <cstring>
-#include "Transicion.hpp"
+#include "transicion.hpp"
 #define	MAX 100
 
 using namespace std;

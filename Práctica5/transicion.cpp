@@ -1,16 +1,16 @@
 #include <iostream> 
 #include <vector> 
-#include "Transicion.hpp"
+#include "transicion.hpp"
 
 using namespace std;
 
-void Transicion::agregarTransicion(int estado){
+void transicion::agregarTransicion(int estado){
 	transiciones.push_back(estado);
 }
-bool Transicion::estaVacia(){
+bool transicion::estaVacia(){
 	return transiciones.empty();
 }
-void Transicion::imprimirElementos(){
+void transicion::imprimirElementos(){
 	for(int i=0;i<transiciones.size();i++){
 		if(i+1<transiciones.size())
 			cout << transiciones[i] <<",";
@@ -18,9 +18,9 @@ void Transicion::imprimirElementos(){
 			cout << transiciones[i];
 	}
 }
-int Transicion::obtenerTransicion(int i){
+int transicion::obtenerTransicion(int i){
 	return transiciones[i];
 }
-int Transicion::obtenerTamanio(){
+int transicion::obtenerTamanio(){
 	return transiciones.size();
 }

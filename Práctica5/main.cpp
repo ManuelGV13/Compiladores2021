@@ -2,6 +2,7 @@
 #include <string> 
 #include "Algoritmo.hpp"
 
+
 using namespace std;
 
 int main(int argc, char** argv) {

@@ -1,46 +1,46 @@
 #include <iostream> 
 #include <vector>
-#include "EstadoCandidato.hpp"
+#include "estado.hpp"
 
-void EstadoCandidato::mostrarNucleo(){
+void estado::mostrarNucleo(){
 	for(int i=0;i<nucleo.size();i++)
 		cout<<" "<<nucleo[i];	
 }
-void EstadoCandidato::ingresarNucleo(int estado){
+void estado::ingresarNucleo(int estado){
 	nucleo.push_back(estado);
 }
-int EstadoCandidato::obtenerIndiceNucleo(int i){
+int estado::obtenerIndiceNucleo(int i){
 	return nucleo[i];
 }
-vector<int> EstadoCandidato::obtenerNucleoVector(){
+vector<int> estado::obtenerNucleoVector(){
 	return nucleo;
 }
-int EstadoCandidato::nucleoTamanio(){
+int estado::nucleoTamanio(){
 	return nucleo.size();
 }
-void EstadoCandidato::marcarDestado(){
+void estado::marcarDestado(){
 	marcaDestado=true;
 }
-void EstadoCandidato::desmarcarDestado(){
+void estado::desmarcarDestado(){
 	marcaDestado=false;
 }
-bool EstadoCandidato::obtenerDestado(){
+bool estado::obtenerDestado(){
 	return marcaDestado;
 }
-void EstadoCandidato::agregarEstado(int estado){
+void estado::agregarEstado(int estado){
 	estados.push_back(estado);
 }
-bool EstadoCandidato::tablaVacia(){
+bool estado::tablaVacia(){
 	return estados.empty();
 }
-void EstadoCandidato::imprimirTabla(){
+void estado::imprimirTabla(){
 	for(int i=0;i<estados.size();i++){
 		cout<< estados[i] <<" ";
 	}
 }
-int EstadoCandidato::obtenerEstado(int i){
+int estado::obtenerEstado(int i){
 	return estados[i];
 }
-int EstadoCandidato::obtenerTamanioEstados(){
+int estado::obtenerTamanioEstados(){
 	return estados.size();
 }

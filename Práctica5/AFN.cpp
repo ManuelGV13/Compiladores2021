@@ -8,8 +8,8 @@
 #include <cstring>
 #include <sstream>
 #include "AFN.hpp"
-#include "Transicion.hpp"
-#include "EstadoCandidato.hpp"
+#include "transicion.hpp"
+#include "estado.hpp"
 
 using namespace std;
 

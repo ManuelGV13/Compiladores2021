@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string> 
-#include "Algoritmo.hpp"
+#include "algoritmo.hpp"
 
 
 using namespace std;

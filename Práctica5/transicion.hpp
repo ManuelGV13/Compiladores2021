@@ -13,4 +13,5 @@ class Transicion{
 		void imprimirElementos();
 		int obtenerTransicion(int i);
 		int obtenerTamanio();
+	
 };
